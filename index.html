@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Tienda Mascotas</title>
 </head>
 
 <body>
@@ -46,10 +46,12 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="javascript:void(0)">Promociones</a>
+                        <a class="nav-link" href="javascript:void(0)" data-bs-toggle="modal"
+                        data-bs-target="#sesionModal">Promociones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Descuentos</a>
+                        <a class="nav-link" href="javascript:void(0)" data-bs-toggle="modal"
+                        data-bs-target="#sesionModal">Descuentos</a>
                     </li>
                 </ul>
             </div>
@@ -102,84 +104,126 @@
     </div>
 
     <div class="row justify-content-center m-4">
-        <div class="nav-item mx-4" style="width:400px">
+        <div class="nav-item mx-4" style="width:300px">
             <img class="card-img-top" src="img/card1.jpg" alt="Card image">
         </div>
-        <div class="nav-item mx-4" style="width:400px">
+        <div class="nav-item mx-4" style="width:300px">
             <img class="card-img-top" src="img/card2.jpg" alt="Card image">
         </div>
-        <div class="nav-item mx-4" style="width:400px">
+        <div class="nav-item mx-4" style="width:300px">
             <img class="card-img-top" src="img/card3.jpg" alt="Card image">
         </div>
     </div>
 
     <div class="m-5 justify-content-center">
         <div class="row justify-content-center">
-            <div class="col-sm-3 m-5 my-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="img/comida whiskas.webp" alt="Card image">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <a href="#mynavbar"><img class="card-img-top" src="img/comida whiskas.webp" data-bs-toggle="modal"
+                        data-bs-target="#sesionModal" alt="Card image"></a>
                     <div class="card-body">
                         <h5 class="card-title">Wiskas 6kg / Sabor pescado</h5>
                         <p class="card-text texto-precio">Precio: $11.990</p>
-                        <p class="m-2"><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a> Cantidad: <input
-                                type="number" class="count" style="width: 80px;" name="qty" value="1"></p>
+                        <div class="row justify-content-center">
+                        <div class="col-sm-7">
+                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                        </div>
+                        <div class="col-sm-4">
+                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 m-5 my-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="img/comida felix.webp" alt="Card image">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <a href="#mynavbar"><img class="card-img-top" src="img/comida felix.webp" data-bs-toggle="modal"
+                        data-bs-target="#sesionModal" alt="Card image"></a>
                     <div class="card-body">
                         <h5 class="card-title">Felix Classic Trocitos 85g / Sabor Atún</h5>
                         <p class="card-text texto-precio">Precio: $5.960</p>
-                        <p class="m-2"><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a> Cantidad: <input
-                                type="number" class="count" style="width: 80px;" name="qty" value="1"></p>
+                        <div class="row justify-content-center">
+                        <div class="col-sm-7">
+                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                        </div>
+                        <div class="col-sm-4">
+                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 m-5 my-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="img/comida cat chow.jpg" alt="Card image">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <a href="#mynavbar"><img class="card-img-top" src="img/comida cat chow.jpg" data-bs-toggle="modal"
+                        data-bs-target="#sesionModal" alt="Card image"></a>
                     <div class="card-body">
                         <h5 class="card-title">Cat Chow gatito 500g / Fortidefense</h5>
                         <p class="card-text texto-precio">Precio: $9.780</p>
-                        <p class="m-2"><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a> Cantidad: <input
-                                type="number" class="count" style="width: 80px;" name="qty" value="1"></p>
+                        <div class="row justify-content-center">
+                        <div class="col-sm-7">
+                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                        </div>
+                        <div class="col-sm-4">
+                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-sm-3 m-5 my-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="img/comida whiskas.webp" alt="Card image">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <a href="#mynavbar"><img class="card-img-top" src="img/comida whiskas.webp" data-bs-toggle="modal"
+                        data-bs-target="#sesionModal" alt="Card image"></a>
                     <div class="card-body">
                         <h5 class="card-title">Wiskas 6kg / Sabor pescado</h5>
                         <p class="card-text texto-precio">Precio: $11.990</p>
-                        <p class="m-2"><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a> Cantidad: <input
-                                type="number" class="count" style="width: 80px;" name="qty" value="1"></p>
+                        <div class="row justify-content-center">
+                        <div class="col-sm-7">
+                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                        </div>
+                        <div class="col-sm-4">
+                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 m-5 my-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="img/comida felix.webp" alt="Card image">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <a href="#mynavbar"><img class="card-img-top" src="img/comida felix.webp" data-bs-toggle="modal"
+                        data-bs-target="#sesionModal" alt="Card image"></a>
                     <div class="card-body">
                         <h5 class="card-title">Felix Classic Trocitos 85g / Sabor Atún</h5>
                         <p class="card-text texto-precio">Precio: $5.960</p>
-                        <p class="m-2"><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a> Cantidad: <input
-                                type="number" class="count" style="width: 80px;" name="qty" value="1"></p>
+                        <div class="row justify-content-center">
+                        <div class="col-sm-7">
+                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                        </div>
+                        <div class="col-sm-4">
+                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3 m-5 my-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="img/comida cat chow.jpg" alt="Card image">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <a href="#mynavbar"><img class="card-img-top" src="img/comida cat chow.jpg" data-bs-toggle="modal"
+                        data-bs-target="#sesionModal" alt="Card image"></a>
                     <div class="card-body">
                         <h5 class="card-title">Cat Chow gatito 500g / Fortidefense</h5>
                         <p class="card-text texto-precio">Precio: $9.780</p>
-                        <p class="m-2"><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a> Cantidad: <input
-                                type="number" class="count" style="width: 80px;" name="qty" value="1"></p>
+                        <div class="row justify-content-center">
+                        <div class="col-sm-7">
+                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                        </div>
+                        <div class="col-sm-4">
+                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
