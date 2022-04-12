@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Compras</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./logeado.html"><img src="img/pngtree-dog-moon-logo-png-image_847379.jpg"
+                    alt="" width="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="navbar-text text-white">Tienda de Mascotas</span>
+            <ul class="nav m-3">
+                <form class="d-flex">
+                    <input class="form-control me-2" style="width: 600px;" type="text" placeholder="Buscar">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carrito.html"><i class="fa fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i
+                                class="fa fa-user"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./compras.html">Compras</a></li>
+                            <li><a class="dropdown-item" href="#asd">Suscripción</a></li>
+                            <li><a class="dropdown-item" href="./index.html">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="javascript:void(0)">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Descuentos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <h2>Compras</h2>
+        <p>Aqui podrás ver tus compras realizadas</p>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Imagen producto</th>
+                    <th>Detalles compra</th>
+                    <th>Ayuda</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="./img/comida whiskas.webp" alt="" width="80px"></td>
+                    <td>Nombre: Wiskas 6kg / Sabor pescado <br> Tipo de producto: Comida para gatos <br> Marca: Whiskas
+                        <br> Cantidad: 1 <br> Precio: $11.990
+                    </td>
+                    <td>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary btn-block">Volver a Comprar</button>
+                        </div>
+                        <div class="text-center m-2">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#boletaModal">Boleta</a> <br> <a href=""
+                                data-bs-toggle="modal" data-bs-target="#seguiModal">Seguimiento</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./img/comida felix.webp" alt="" width="80px"></td>
+                    <td>Nombre: Felix Classic Trocitos 85g / Sabor Atún <br> Tipo de producto: Comida para gatos <br>
+                        Marca: Felix <br> Cantidad: 4 <br> Precio: $5.960
+                    </td>
+                    <td>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary btn-block">Volver a Comprar</button>
+                        </div>
+                        <div class="text-center m-2">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#boletaModal">Boleta</a> <br> <a href=""
+                                data-bs-toggle="modal" data-bs-target="#seguiModal">Seguimiento</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="./img/comida cat chow.jpg" alt="" width="80px"></td>
+                    <td>Nombre: Cat Chow gatito 500g / Fortidefense <br> Tipo de producto: Comida para gatos <br> Marca:
+                        Cat Chow <br> Cantidad: 2 <br> Precio: $9.780
+                    </td>
+                    <td>
+                        <div class="d-grid">
+                            <button type="button" class="btn btn-primary btn-block">Volver a Comprar</button>
+                        </div>
+                        <div class="text-center m-2">
+                            <a href="" data-bs-toggle="modal" data-bs-target="#boletaModal">Boleta</a> <br>
+                            <a href="" data-bs-toggle="modal" data-bs-target="#seguiModal">Seguimiento</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal" tabindex="-1" id="seguiModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Seguimiento</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2>Tu producto Llegó el 9 de Abril</h2>
+                        <hr>
+                        <h6>Numero Seguimiento: #982312331</h6>
+                        <div class="row justify-content-center">
+                            <img src="./img/Pedido Realizado.png" alt="">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h6>Procesos:</h6>
+                                <h6>- Tu producto esta en proceso de embalaje</h6>
+                                <h6>- Tu producto fue recibido en la sucursal</h6>
+                                <h6>- Tu producto esta en proceso de despacho</h6>
+                                <h6>- Tu producto esta en transito</h6>
+                                <h6>- Tu producto fue entregado y recibido en tu domicilio</h6>
+                            </div>
+                            <div class="col-sm-2 text-center">
+                                <h6>Fecha</h6>
+                                <h6>07/04/22</h6>
+                                <h6>08/04/22</h6>
+                                <h6>09/04/22</h6>
+                                <h6>09/04/22</h6>
+                                <h6>09/04/22</h6>
+                            </div>
+                            <div class="col-sm-2 text-center">
+                                <h6>Hora</h6>
+                                <h6>06:00 Hrs</h6>
+                                <h6>13:55 Hrs</h6>
+                                <h6>11:05 Hrs</h6>
+                                <h6>13:55 Hrs</h6>
+                                <h6>19:30 Hrs</h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="boletaModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Boleta</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2>Wiskas 6Kg / Sabor pescado $11.990</h2>
+                        <hr>
+                        <h6>Numero Compra: #231121</h6>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-7">
+                                <img src="./img/comida whiskas.webp" alt="" width="400px">
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white" id="asd">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
+                        class="fab fa-facebook-f "></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+                <form action="">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center">
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <p class="pt-2">
+                                <strong>Suscribete para beneficios</strong>
+                            </p>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-5 col-12">
+                            <!-- Email input -->
+                            <div class="form-outline form-white mb-4">
+                                <input type="email" id="form5Example21" class="form-control" />
+                                <label class="form-label" for="form5Example21">Correo Electronico</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-auto">
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-outline-light mb-4">
+                                Subscribe
+                            </button>
+                        </div>
+                        <!--Grid column-->
+                    </div>
+                    <!--Grid row-->
+                </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="#">Tienditademascotas.cl</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+</body>
+
+</html>
