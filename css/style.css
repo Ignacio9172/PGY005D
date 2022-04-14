@@ -44,6 +44,5 @@ html {
 
 .fondo-suscri{
     background-image: url(/img/fondo\ mascotas.jpg);
-    background-size: cover;
     background-size: contain;
 }
