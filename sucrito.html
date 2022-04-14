@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Producto</title>
+    <title>Perfil Usuario</title>
 </head>
 
 <body>
@@ -60,42 +60,102 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 py-4">
-                <img src="./img/comida whiskas.webp" alt="" width="500px">
+            <div class="col-sm-2 bg-dark" style="min-height: 90vh;">
+                <div class="row">
+                    <div class="col-sm-12 mt-3 d-flex justify-content-center">
+                        <img class="avatar" src="img/perfil.jpg" alt="">
+                    </div>
+                    <div class="col-sm-12 text-white mt-3 d-flex justify-content-center">
+                        <h6>Bienvenido: Usuario123</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="nav flex-column mt-1">
+                            <li class="nav-item">
+                                <a class="nav-link activo" href="./perfil.html"><i
+                                        class="fa-regular fa-circle-user"></i> Datos</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link " href="#"><i class="fa-solid fa-paw"></i> Suscripción</a>
+                            </li>
+                            <hr class="text-white">
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" href="./index.html"><i class="fa fa-right-from-bracket"></i> Cerrar
+                                    Sesión</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 py-4 text-white bg-dark">
-                <h2 class="text-center">Wiskas 6Kg / Sabor Pescado</h2>
-                <hr>
-                <h1 class="text-end">Precio: $11.990</h1>
-                <h6 class="text-end">Stock: 5</h6>
-                <br>
-                <h3>Características:</h3>
-                <table class="table mt-4" style="background-color: white;">
-                    <tbody>
-                        <tr>
-                            <td>Tipo de Producto:</td>
-                            <td class="text-end">Comida para Gatos</td>
-                        </tr>
-                        <tr>
-                            <td>Marca:</td>
-                            <td class="text-end">Wiskas</td>
-                        </tr>
-                        <tr>
-                            <td>Detalles:</td>
-                            <td class="text-end">Sabor Pescado 6Kg</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
-                <div class="d-flex justify-content-end">
-                    <h4 class="me-auto">Cantidad:<input type="number" class="count mx-3" style="width: 150px;" name="qty" value="1"></h4>
-                    <button type="button" class="btn btn-primary btn-block">Añadir al Carrito</button>
+
+            <div class="col-sm-10">
+                <div class="row justify-content-end fondo-suscri">
+                    <div class="col-sm-2 bg-dark m-5" style="border-radius: 15px;">
+                        <div class="text-center text-white">
+                            <h6>Estado suscripción: Suscrito</h6>
+                            <h6>Proximo Cobro: 30/04/2022</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-5 mt-1">
+                    <h1>Suscripción</h2>
+                        Consigue precios únicos y todos tus productos favoritos con tan solo una membresia.
+                        <hr>
+                        <h3 class="my-4">Beneficios</h3>
+                        <div class="row">
+                            <div class="col-sm-4 d-flex">
+                                <div class="col-sm-2 mx-3">
+                                    <img class="redondear-icono" src="./img/free shipping.png" alt="">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h5>Entregas sin costo de envio</h5>Dsifruta de nuestras entregas sin costo de envío
+                                    de
+                                    cualquier sucursal en tu área. Pedido mínimo de CLP 4.990 (sin impuestos ni tasas).
+                                    Limite
+                                    de uso 20 veces al Mes.
+                                </div>
+                            </div>
+                            <div class="col-sm-4 d-flex">
+                                <div class="col-sm-2 mx-3">
+                                    <img class="redondear-icono" src="./img/tratamiento-descuentos-comerciales.png"
+                                        alt="">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h5>Descuentos Exclusivos</h5>Obtendras descuentos exclusivos, para que compres tu
+                                    producto
+                                    favorito al precio más conveniente para tu preferencia. Recibiras a tu correo
+                                    electronico
+                                    registrado codigos de descuento (Con fecha de expiración de 14 días).
+                                </div>
+                            </div>
+                            <div class="col-sm-4 d-flex">
+                                <div class="col-sm-2 mx-3">
+                                    <img class="redondear-icono" src="./img/soporte.png" alt="">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h5>Soporte Prioritario</h5>Obten respuestas de nuestros agentes de soporte expertos
+                                    más
+                                    rápido para resolver todas tus inquietudes a la mayor vebredad posible.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <br>
+                        <div class="row">
+                            <div class="d-flex justify-content-end">
+                                <h4 class="me-auto">Precio: 7.990 / mes</h4>
+                                <a href=""><button type="button" class="btn btn-primary btn-block mx-4"
+                                        disabled>Suscribete</button></a>
+                                <a href="./suscripcion.html"><button type="button" class="btn btn-danger btn-block">Anular
+                                        Suscripción</button></a>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
-
-
     </div>
+
 
 
 

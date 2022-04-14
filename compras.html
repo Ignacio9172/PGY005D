@@ -20,23 +20,19 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="./logeado.html"><img src="img/pngtree-dog-moon-logo-png-image_847379.jpg"
-                    alt="" width="60"></a>
+                    alt="" width="60"><span class="navbar-text text-white m-4">Tienda de Mascotas</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <span class="navbar-text text-white">Tienda de Mascotas</span>
-            <ul class="nav m-3">
-                <form class="d-flex">
-                    <input class="form-control me-2" style="width: 600px;" type="text" placeholder="Buscar">
-                    <button class="btn btn-primary" type="button">Search</button>
-                </form>
-            </ul>
             <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
-
-                <ul class="navbar-nav">
+                <form class="d-flex me-auto">
+                    <input class="form-control me-2" type="text" placeholder="Buscar">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mx-2">
                     <li class="nav-item">
                         <a class="nav-link" href="./carrito.html"><i class="fa fa-cart-shopping"></i></a>
                     </li>
@@ -44,17 +40,19 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i
                                 class="fa fa-user"></i></a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./perfil.html">Usuario</a></li>
                             <li><a class="dropdown-item" href="./compras.html">Compras</a></li>
                             <li><a class="dropdown-item" href="#asd">Suscripción</a></li>
                             <li><a class="dropdown-item" href="./index.html">Cerrar Sesión</a></li>
                         </ul>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="javascript:void(0)">Promociones</a>
+                        <a class="nav-link" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#promocionesModal">Promociones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Descuentos</a>
-                    </li>
+                        <a class="nav-link" href="javascript:void(0)" data-bs-toggle="modal"
+                            data-bs-target="#descuentosModal">Descuentos</a>
                 </ul>
             </div>
         </div>

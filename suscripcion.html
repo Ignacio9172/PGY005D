@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Carrito</title>
+    <title>Perfil Usuario</title>
 </head>
 
 <body>
@@ -58,90 +58,103 @@
         </div>
     </nav>
 
-    <div class="container-fluid mt-3">
-        <div class="row justify-content-center m-4">
-            <h2>Carrito</h2>
-            <p>Aqui podrás ver tus compras realizadas</p>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th></th>
-                        <th class="text-end">Precio por unidad</th>
-                        <th class="text-end">Cantidad</th>
-                        <th class="text-end">Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="./img/comida whiskas.webp" alt="" width="80px"></td>
-                        <td>Wiskas 6kg / Sabor pescado <br> Tipo de producto: Comida para gatos <br> Marca: Whiskas
-                        </td>
-                        <td class="text-end">
-                            $11.990
-                        </td>
-                        <td class="text-end">
-                            1
-                        </td>
-                        <td class="text-end">
-                            $11.990
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="./img/comida felix.webp" alt="" width="80px"></td>
-                        <td>Nombre: Felix Classic Trocitos 85g / Sabor Atún <br> Tipo de producto: Comida para gatos
-                            <br>
-                            Marca: Felix
-                        </td>
-                        <td class="text-end">
-                            $1.490
-                        </td>
-                        <td class="text-end">
-                            4
-                        </td>
-                        <td class="text-end">
-                            $5.960
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="./img/comida cat chow.jpg" alt="" width="80px"></td>
-                        <td>Nombre: Cat Chow gatito 500g / Fortidefense <br> Tipo de producto: Comida para gatos <br>
-                            Marca:
-                            Cat Chow
-                        </td>
-                        <td class="text-end">
-                            $4.890
-                        </td>
-                        <td class="text-end">
-                            2
-                        </td>
-                        <td class="text-end">
-                            $9.780
-                        </td>
-                    </tr>
-                    <tr class="text-end">
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-                            <h5>Total:</h5>
-                        </td>
-                        <td>
-                            <h5>$27.730</h5>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="row justify-content-end">
-                <div class="col-sm-1">
-                    <a href="" data-bs-toggle="modal" data-bs-target="#metodopagoModal"><button type="button"
-                            class="btn btn-primary">Pagar</button></a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 bg-dark" style="min-height: 90vh;">
+                <div class="row">
+                    <div class="col-sm-12 mt-3 d-flex justify-content-center">
+                        <img class="avatar" src="img/perfil.jpg" alt="">
+                    </div>
+                    <div class="col-sm-12 text-white mt-3 d-flex justify-content-center">
+                        <h6>Bienvenido: Usuario123</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="nav flex-column mt-1">
+                            <li class="nav-item">
+                                <a class="nav-link activo" href="./perfil.html"><i
+                                        class="fa-regular fa-circle-user"></i> Datos</a>
+                            </li>
+                            <li class="nav-item mt-1">
+                                <a class="nav-link " href="#"><i class="fa-solid fa-paw"></i> Suscripción</a>
+                            </li>
+                            <hr class="text-white">
+                            <li class="nav-item mt-1">
+                                <a class="nav-link" href="./index.html"><i class="fa fa-right-from-bracket"></i> Cerrar
+                                    Sesión</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
+            <div class="col-sm-10">
+                <div class="row justify-content-end fondo-suscri">
+                    <div class="col-sm-2 bg-dark m-5" style="border-radius: 15px;">
+                        <div class="text-center text-white">
+                            <h6>Estado suscripción: <br> No Suscrito</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-5 mt-1">
+                    <h1>Suscripción</h2>
+                        Consigue precios únicos y todos tus productos favoritos con tan solo una membresia.
+                        <hr>
+                        <h3 class="my-4">Beneficios</h3>
+                        <div class="row">
+                            <div class="col-sm-4 d-flex">
+                                <div class="col-sm-2 mx-3">
+                                    <img class="redondear-icono" src="./img/free shipping.png" alt="">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h5>Entregas sin costo de envio</h5>Dsifruta de nuestras entregas sin costo de envío
+                                    de
+                                    cualquier sucursal en tu área. Pedido mínimo de CLP 4.990 (sin impuestos ni tasas).
+                                    Limite
+                                    de uso 20 veces al Mes.
+                                </div>
+                            </div>
+                            <div class="col-sm-4 d-flex">
+                                <div class="col-sm-2 mx-3">
+                                    <img class="redondear-icono" src="./img/tratamiento-descuentos-comerciales.png"
+                                        alt="">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h5>Descuentos Exclusivos</h5>Obtendras descuentos exclusivos, para que compres tu
+                                    producto
+                                    favorito al precio más conveniente para tu preferencia. Recibiras a tu correo
+                                    electronico
+                                    registrado codigos de descuento (Con fecha de expiración de 14 días).
+                                </div>
+                            </div>
+                            <div class="col-sm-4 d-flex">
+                                <div class="col-sm-2 mx-3">
+                                    <img class="redondear-icono" src="./img/soporte.png" alt="">
+                                </div>
+                                <div class="col-sm-9">
+                                    <h5>Soporte Prioritario</h5>Obten respuestas de nuestros agentes de soporte expertos
+                                    más
+                                    rápido para resolver todas tus inquietudes a la mayor vebredad posible.
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <br>
+                        <div class="row">
+                            <div class="d-flex justify-content-end">
+                                <h4 class="me-auto">Precio: 7.990 / mes</h4>
+                                <a href=""data-bs-toggle="modal" data-bs-target="#metodopagoModal"><button type="button"
+                                        class="btn btn-primary btn-block mx-4">Suscribete</button></a>
+                                <a href=""><button type="button" class="btn btn-danger btn-block" disabled>Anular
+                                        Suscripción</button></a>
+                            </div>
+                        </div>
+                </div>
+            </div>
         </div>
-
     </div>
+
 
     <div class="modal" tabindex="-1" id="metodopagoModal">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -179,7 +192,8 @@
                         </div>
                         <hr>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                >
                             <label class="form-check-label" for="flexRadioDefault2">
                                 <div class="row">
                                     <div class="col-sm-4 m-2">
@@ -256,7 +270,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Finalizar Pago</button>
+                    <a href="./sucrito.html"><button type="button" class="btn btn-primary">Finalizar Pago</button></a>
                 </div>
             </div>
         </div>

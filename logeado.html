@@ -20,23 +20,19 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="./logeado.html"><img src="img/pngtree-dog-moon-logo-png-image_847379.jpg"
-                    alt="" width="60"></a>
+                    alt="" width="60"><span class="navbar-text text-white m-4">Tienda de Mascotas</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <span class="navbar-text text-white">Tienda de Mascotas</span>
-            <ul class="nav m-3">
-                <form class="d-flex">
-                    <input class="form-control me-2" style="width: 600px;" type="text" placeholder="Buscar">
-                    <button class="btn btn-primary" type="button">Search</button>
-                </form>
-            </ul>
             <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
-
-                <ul class="navbar-nav">
+                <form class="d-flex me-auto">
+                    <input class="form-control me-2" type="text" placeholder="Buscar">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mx-2">
                     <li class="nav-item">
                         <a class="nav-link" href="./carrito.html"><i class="fa fa-cart-shopping"></i></a>
                     </li>
@@ -44,6 +40,7 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><i
                                 class="fa fa-user"></i></a>
                         <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./perfil.html">Usuario</a></li>
                             <li><a class="dropdown-item" href="./compras.html">Compras</a></li>
                             <li><a class="dropdown-item" href="#asd">Suscripción</a></li>
                             <li><a class="dropdown-item" href="./index.html">Cerrar Sesión</a></li>
@@ -56,173 +53,182 @@
                     <li class="nav-item">
                         <a class="nav-link" href="javascript:void(0)" data-bs-toggle="modal"
                             data-bs-target="#descuentosModal">Descuentos</a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Carousel -->
-    <div id="demo" class="carousel slide mx-auto m-4" style="width: 800px;" data-bs-ride="carousel">
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner redondeo-img">
-            <div class="carousel-item active">
-                <img src="img/corousel img2.jpg" alt="" class="d-block w-100">
-                <div class="carousel-caption text-white fondo-texto">
-                    <h3>Alimentos Perritos</h3>
-                    <p>We had such a great time in LA!</p>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div id="demo" class="carousel slide mx-auto m-4" style="width: 800px;" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/corousel img3.jpg" alt="Chicago" class="d-block w-100">
-                <div class="carousel-caption text-white fondo-texto">
-                    <h3>Alimentos Gatitos</h3>
-                    <p>We had such a great time in LA!</p>
+
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner redondeo-img">
+                    <div class="carousel-item active">
+                        <img src="img/corousel img2.jpg" alt="" class="d-block w-100">
+                        <div class="carousel-caption text-white fondo-texto">
+                            <h3>Alimentos Perritos</h3>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/corousel img3.jpg" alt="Chicago" class="d-block w-100">
+                        <div class="carousel-caption text-white fondo-texto">
+                            <h3>Alimentos Gatitos</h3>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/corousel img4.jpg" alt="New York" class="d-block w-100">
+                        <div class="carousel-caption text-white fondo-texto">
+                            <h3>Accesorios</h3>
+                            <p>We had such a great time in LA!</p>
+                        </div>
+                    </div>
                 </div>
+
+
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <div class="carousel-item">
-                <img src="img/corousel img4.jpg" alt="New York" class="d-block w-100">
-                <div class="carousel-caption text-white fondo-texto">
-                    <h3>Accesorios</h3>
-                    <p>We had such a great time in LA!</p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </div>
-
-    <div class="row justify-content-center m-4">
-        <div class="nav-item mx-4" style="width:300px">
-            <img class="card-img-top" src="img/card1.jpg" alt="Card image">
-        </div>
-        <div class="nav-item mx-4" style="width:300px">
-            <img class="card-img-top" src="img/card2.jpg" alt="Card image">
-        </div>
-        <div class="nav-item mx-4" style="width:300px">
-            <img class="card-img-top" src="img/card3.jpg" alt="Card image">
         </div>
     </div>
 
-    <div class="row m-5 justify-content-center">
-        <div class="col-sm-3 m-2">
-            <div class="card" style="width:300px">
-                <a href="./producto.html"><img class="card-img-top" src="img/comida whiskas.webp" alt="Card image"></a>
-                <div class="card-body">
-                    <h5 class="card-title">Wiskas 6kg / Sabor pescado</h5>
-                    <p class="card-text texto-precio">Precio: $11.990</p>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-7">
-                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 nav-item m-2" style="width:400px">
+                <img class="card-img-top" src="img/card1.jpg" alt="Card image">
+            </div>
+            <div class="col-sm-4 nav-item m-2" style="width:400px">
+                <img class="card-img-top" src="img/card2.jpg" alt="Card image">
+            </div>
+            <div class="col-sm-4 nav-item m-2" style="width:400px">
+                <img class="card-img-top" src="img/card3.jpg" alt="Card image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-4">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <a href="./producto.html"><img class="card-img-top" src="img/comida whiskas.webp"
+                            alt="Card image"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Wiskas 6kg / Sabor pescado</h5>
+                        <p class="card-text texto-precio">Precio: $11.990</p>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-7">
+                                <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-3 m-2">
-            <div class="card" style="width:300px">
-                <img class="card-img-top" src="img/comida felix.webp" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">Felix Classic Trocitos 85g / Sabor Atún</h5>
-                    <p class="card-text texto-precio">Precio: $5.960</p>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-7">
-                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3 m-2">
-            <div class="card" style="width:300px">
-                <img class="card-img-top" src="img/comida cat chow.jpg" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">Cat Chow gatito 500g / Fortidefense</h5>
-                    <p class="card-text texto-precio">Precio: $9.780</p>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-7">
-                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="img/comida felix.webp" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Felix Classic Trocitos 85g / Sabor Atún</h5>
+                        <p class="card-text texto-precio">Precio: $5.960</p>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-7">
+                                <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-3 m-2">
-            <div class="card" style="width:300px">
-                <a href="./producto.html"><img class="card-img-top" src="img/comida whiskas.webp" alt="Card image"></a>
-                <div class="card-body">
-                    <h5 class="card-title">Wiskas 6kg / Sabor pescado</h5>
-                    <p class="card-text texto-precio">Precio: $11.990</p>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-7">
-                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3 m-2">
-            <div class="card" style="width:300px">
-                <img class="card-img-top" src="img/comida felix.webp" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">Felix Classic Trocitos 85g / Sabor Atún</h5>
-                    <p class="card-text texto-precio">Precio: $5.960</p>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-7">
-                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
-                        </div>
-                        <div class="col-sm-4">
-                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="img/comida cat chow.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Cat Chow gatito 500g / Fortidefense</h5>
+                        <p class="card-text texto-precio">Precio: $9.780</p>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-7">
+                                <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-3 m-2">
-            <div class="card" style="width:300px">
-                <img class="card-img-top" src="img/comida cat chow.jpg" alt="Card image">
-                <div class="card-body">
-                    <h5 class="card-title">Cat Chow gatito 500g / Fortidefense</h5>
-                    <p class="card-text texto-precio">Precio: $9.780</p>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-7">
-                            <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <a href="./producto.html"><img class="card-img-top" src="img/comida whiskas.webp"
+                            alt="Card image"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Wiskas 6kg / Sabor pescado</h5>
+                        <p class="card-text texto-precio">Precio: $11.990</p>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-7">
+                                <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                            </div>
                         </div>
-                        <div class="col-sm-4">
-                            Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="img/comida felix.webp" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Felix Classic Trocitos 85g / Sabor Atún</h5>
+                        <p class="card-text texto-precio">Precio: $5.960</p>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-7">
+                                <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 m-2">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="img/comida cat chow.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h5 class="card-title">Cat Chow gatito 500g / Fortidefense</h5>
+                        <p class="card-text texto-precio">Precio: $9.780</p>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-7">
+                                <p class=""><a href="#" class="btn btn-primary mx-3">Añadir al Carrito</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                Cantidad:<input type="number" class="count" style="width: 80px;" name="qty" value="1">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="modal" tabindex="-1" id="descuentosModal">
         <div class="modal-dialog modal-lg modal-dialog-centered">
@@ -233,7 +239,94 @@
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid justify-content-center">
-                        <img src="./img/cupones_descuento.jpg" alt="" width="600px">
+                        <table class="table table-striped">
+                            <tbody>
+                                <tr>
+                                    <td><img src="./img/25-por-ciento-descuento.jpg" alt="" width="40px"></td>
+                                    <td>Cupón de descuento de un 25% en Comida para gatos</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample" aria-expanded="false"
+                                            aria-controls="collapseExample">
+                                            Conseguir Cupón
+                                        </button>
+                                        <div class="collapse collapse-horizontal" id="collapseExample">
+                                            <h4>CATFOOD25</h4>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/35porciento.png" alt="" width="40px"></td>
+                                    <td>Cupón de descuento de un 35% en Accesorios para Perros</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample2" aria-expanded="false"
+                                            aria-controls="collapseExample2">
+                                            Conseguir Cupón
+                                        </button>
+                                        <div class="collapse collapse-horizontal" id="collapseExample2">
+                                            <h4>ACCESORIOS35</h4>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/15-dibe.png" alt="" width="40px"></td>
+                                    <td>Cupón de descuento de un 15% en Comida para Perros</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample3" aria-expanded="false"
+                                            aria-controls="collapseExample3">
+                                            Conseguir Cupón
+                                        </button>
+                                        <div class="collapse collapse-horizontal" id="collapseExample3">
+                                            <h4>DOGFOOD15</h4>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/25-por-ciento-descuento.jpg" alt="" width="40px"></td>
+                                    <td>Cupón de descuento de un 25% en Comida para gatos</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample4" aria-expanded="false"
+                                            aria-controls="collapseExample4">
+                                            Conseguir Cupón
+                                        </button>
+                                        <div class="collapse collapse-horizontal" id="collapseExample4">
+                                            <h4>CATFOOD25</h4>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/35porciento.png" alt="" width="40px"></td>
+                                    <td>Cupón de descuento de un 35% en Accesorios para Perros</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample5" aria-expanded="false"
+                                            aria-controls="collapseExample5">
+                                            Conseguir Cupón
+                                        </button>
+                                        <div class="collapse collapse-horizontal" id="collapseExample5">
+                                            <h4>ACCESORIOS35</h4>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="./img/15-dibe.png" alt="" width="40px"></td>
+                                    <td>Cupón de descuento de un 15% en Comida para Perros</td>
+                                    <td class="text-end">
+                                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseExample6" aria-expanded="false"
+                                            aria-controls="collapseExample6">
+                                            Conseguir Cupón
+                                        </button>
+                                        <div class="collapse collapse-horizontal" id="collapseExample6">
+                                            <h4>DOGFOOD15</h4>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -261,6 +354,8 @@
             </div>
         </div>
     </div>
+
+
 
     <!-- Footer -->
     <footer class="bg-dark text-center text-white" id="asd">
